@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+class pokemon
+{
+    string name;
+    PokemonType type;
+    int health;
+};
+
 enum PokemonChoice {
     Charmander,
     Bulbasaur,
