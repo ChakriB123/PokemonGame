@@ -1,2 +1,5 @@
 ﻿  main.cpp
-  Pokemon.vcxproj -> E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Pokemon.exe
+main.obj : error LNK2019: unresolved external symbol "public: static void __cdecl Utility::clearConsole(void)" (?clearConsole@Utility@@SAXXZ) referenced in function "public: void __cdecl ProfessorOak::explainMainQuest(class Player &)" (?explainMainQuest@ProfessorOak@@QEAAXAEAVPlayer@@@Z)
+main.obj : error LNK2019: unresolved external symbol "public: static void __cdecl Utility::waitForEnter(void)" (?waitForEnter@Utility@@SAXXZ) referenced in function "public: void __cdecl Player::choosePokemon(int)" (?choosePokemon@Player@@QEAAXH@Z)
+main.obj : error LNK2019: unresolved external symbol "public: static void __cdecl Utility::clearInputBuffer(void)" (?clearInputBuffer@Utility@@SAXXZ) referenced in function "void __cdecl gameLoop(class Player &)" (?gameLoop@@YAXAEAVPlayer@@@Z)
+E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Pokemon.exe : fatal error LNK1120: 3 unresolved externals
