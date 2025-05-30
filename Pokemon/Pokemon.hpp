@@ -1,7 +1,8 @@
+#pragma once
 #include <string>
 using namespace std;
 
-enum class PokemonType;
+enum class PokemonType;//forward 
 
 class Pokemon {
 public:
