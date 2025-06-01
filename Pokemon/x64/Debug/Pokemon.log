@@ -1,2 +1,6 @@
 ﻿  main.cpp
+  Player.cpp
+  Pokemon.cpp
+  Utility.cpp
+  Generating Code...
   Pokemon.vcxproj -> E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Pokemon.exe
