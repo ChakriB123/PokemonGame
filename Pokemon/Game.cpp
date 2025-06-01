@@ -1,11 +1,20 @@
 #include "Game.hpp"
 #include "Player.hpp"
+#include "PokemonType.hpp"
 #include "Utility.hpp"
-//#include "WildEncounterManager.hpp"
-
+#include "WildEncounterManager.hpp"
 #include <iostream>
+
 using namespace std;
 
+
+Game::Game() {
+    forestGrass = { "Forest",
+                   {Pokemon("Pidgey", PokemonType::NORMAL, 40),
+                    Pokemon("Caterpie", PokemonType::BUG, 35),
+                    Pokemon("Zubat", PokemonType::POISON, 30)},
+                   70 };
+}
 void Game::gameLoop(Player& player) {
 
     int choice;
@@ -31,10 +40,10 @@ void Game::gameLoop(Player& player) {
         switch (choice) {
         case 1: {
             // Create a scope within case 1
-           // WildEncounterManager encounterManager;
-           // Pokemon encounteredPokemon =
-           //     encounterManager.getRandomPokemonFromGrass(forestGrass);
-          //  cout << "A wild " << encounteredPokemon.name << " appeared!\n";
+            WildEncounterManager encounterManager;
+            Pokemon encounteredPokemon =
+                encounterManager.getRandomPokemonFromGrass(forestGrass);
+            cout << "A wild " << encounteredPokemon.name << " appeared!\n";
             break;
         }
         case 2: {
@@ -69,6 +78,8 @@ void Game::gameLoop(Player& player) {
         }
         }
 
+        // Wait for Enter key before the screen is cleared and the menu is shown
+        // again
         Utility::waitForEnter();
     }
 

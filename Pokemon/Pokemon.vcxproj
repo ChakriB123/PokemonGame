@@ -154,18 +154,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />
+    <Content Include=".idea\.idea.Pokemon\.idea\vcs.xml" />
+    <Content Include=".idea\.idea.Pokemon\.idea\workspace.xml" />
+    <Content Include="Pokemon.vcxproj.filters" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Pokemon.cpp" />
     <ClCompile Include="ProfessorOak.cpp" />
     <ClCompile Include="Utility.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />
-    <Content Include=".idea\.idea.Pokemon\.idea\vcs.xml" />
-    <Content Include=".idea\.idea.Pokemon\.idea\workspace.xml" />
-    <Content Include="Pokemon.vcxproj.filters" />
+    <ClCompile Include="WildEncounterManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.hpp" />
@@ -174,8 +175,9 @@
     <ClInclude Include="Pokemon.hpp" />
     <ClInclude Include="PokemonChoice.hpp" />
     <ClInclude Include="PokemonType.hpp" />
-    <ClInclude Include="Utility.hpp" />
     <ClInclude Include="ProfessorOak.hpp" />
+    <ClInclude Include="Utility.hpp" />
+    <ClInclude Include="WildEncounterManager.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
