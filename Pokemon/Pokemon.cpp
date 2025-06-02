@@ -16,6 +16,7 @@ Pokemon::Pokemon(string p_name, PokemonType p_type, int p_maxHealth, int p_attac
 	type = p_type;
 	health = p_maxHealth;
 	maxHealth = p_maxHealth;
+	attackPower = p_attackPower;
 
 }
 // Copy constructor
@@ -32,7 +33,8 @@ Pokemon::~Pokemon() {
 
 void Pokemon::attack(Pokemon& target) {
 	int damage = 10; // Fixed damage for simplicity
-	cout << name << " attacks " << target.name << " for " << damage << " damage!\\n";
+	cout << name << " attacks " << target.name << " for " << damage << " damage!\n";
+	//cout << "target health after attack" << target.health <<endl;
 	target.TakeDamage(damage); // Apply damage to the target Pokémon
 }
 void Pokemon::heal() {

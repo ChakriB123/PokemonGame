@@ -68,5 +68,8 @@
     <ClInclude Include="Pokemon.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BattleManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
