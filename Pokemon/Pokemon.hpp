@@ -9,12 +9,14 @@ public:
     string name;
     PokemonType type;
     int health;
+    int maxHealth;
+    int attackPower;
 
     // Default constructor
     Pokemon();
 
     // Parameterized constructor
-    Pokemon(string p_name, PokemonType p_type, int p_health);
+    Pokemon(string p_name, PokemonType p_type, int p_maxHealth, int p_attackPower);
 
     // Copy constructor
     Pokemon(const Pokemon& other);
@@ -22,5 +24,9 @@ public:
     // Destructor
     ~Pokemon();
 
-    void attack();
+    void attack(Pokemon& target);
+    void heal();
+    void TakeDamage(int Damage);
+    bool isFainted();
+
 };

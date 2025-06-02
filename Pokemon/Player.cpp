@@ -17,16 +17,16 @@ Player::Player(std::string p_name, Pokemon p_chosenPokemon) {
 void Player::choosePokemon(int choice) {
     switch ((PokemonChoice)choice) {
     case PokemonChoice::CHARMANDER:
-        chosenPokemon = Pokemon("Charmander", PokemonType::FIRE, 100);
+        chosenPokemon = Pokemon("Charmander", PokemonType::FIRE, 100,30);
         break;
     case PokemonChoice::BULBASAUR:
-        chosenPokemon = Pokemon("Bulbasaur", PokemonType::GRASS, 100);
+        chosenPokemon = Pokemon("Bulbasaur", PokemonType::GRASS, 100,25);
         break;
     case PokemonChoice::SQUIRTLE:
-        chosenPokemon = Pokemon("Squirtle", PokemonType::WATER, 100);
+        chosenPokemon = Pokemon("Squirtle", PokemonType::WATER, 100,25);
         break;
     default:
-        chosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100);
+        chosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100,30);
         break;
     }
     std::cout << "Player " << name << " chose " << chosenPokemon.name << "!\n";
