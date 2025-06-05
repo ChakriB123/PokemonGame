@@ -1,8 +1,8 @@
 #include "../../include/Character/ProfessorOak.hpp"
-#include "../../include/Character/Player.hpp"
-#include "../../include/Utility/Utility.hpp"
 #include <iostream>
 using namespace std;
+
+namespace N_Character {
 
     // Parameterized constructor
     ProfessorOak::ProfessorOak(string p_name) { name = p_name; }
@@ -108,3 +108,4 @@ using namespace std;
             "forget to set up the actual game loop... Ahem, onwards!\n";
         Utility::waitForEnter();
     }
+}

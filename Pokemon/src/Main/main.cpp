@@ -5,6 +5,8 @@
 #include <iostream>
 #include <limits> // Include this header to use std::numeric_limits
 #include <string>
+using namespace N_Character;
+
 using namespace std;
 
 // Function to handle the main game loop
