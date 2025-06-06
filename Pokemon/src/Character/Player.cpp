@@ -1,6 +1,4 @@
 #include "../../include/Character/Player.hpp"
-#include "../../include/Pokemon/PokemonChoice.hpp"
-#include "../../include/Pokemon/PokemonType.hpp"
 
 namespace N_Player {
     Player::Player() {

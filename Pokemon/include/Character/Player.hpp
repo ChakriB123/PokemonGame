@@ -2,8 +2,11 @@
 #include <string>
 #include "../../include/Pokemon/Pokemon.hpp"
 #include "../../include/Utility/Utility.hpp"
+#include "../../include/Pokemon/PokemonChoice.hpp"
+#include "../../include/Pokemon/PokemonType.hpp"
 #include "iostream"
 using namespace N_Utility;
+using namespace N_Pokemon;
 using namespace std;
 
 namespace N_Player {

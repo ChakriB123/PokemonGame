@@ -6,6 +6,7 @@
 #include <limits> // Include this header to use std::numeric_limits
 #include <string>
 using namespace N_Character;
+using namespace N_Main;
 
 using namespace std;
 

@@ -164,6 +164,7 @@
     <ClCompile Include="src\Main\Game.cpp" />
     <ClCompile Include="src\Main\main.cpp" />
     <ClCompile Include="src\Character\Player.cpp" />
+    <ClCompile Include="src\Pokemon\Pikachu.cpp" />
     <ClCompile Include="src\Pokemon\Pokemon.cpp" />
     <ClCompile Include="src\Character\ProfessorOak.cpp" />
     <ClCompile Include="src\Utility\Utility.cpp" />
@@ -175,6 +176,7 @@
     <ClInclude Include="include\Main\Game.hpp" />
     <ClInclude Include="include\Pokemon\Grass.hpp" />
     <ClInclude Include="include\Character\Player.hpp" />
+    <ClInclude Include="include\Pokemon\Pokemons\Pikachu.hpp" />
     <ClInclude Include="include\Pokemon\Pokemon.hpp" />
     <ClInclude Include="include\Pokemon\PokemonChoice.hpp" />
     <ClInclude Include="include\Pokemon\PokemonType.hpp" />

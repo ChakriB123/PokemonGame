@@ -8,11 +8,13 @@
 using namespace N_Utility;
 using namespace N_Player;
 using namespace N_Battle;
-
-class Game {
-private:
-	Grass forestGrass;
-public:
-	Game();
-	void gameLoop(Player& player);
-};
+using namespace N_Pokemon;
+namespace N_Main {
+	class Game {
+	private:
+		Grass forestGrass;
+	public:
+		Game();
+		void gameLoop(Player& player);
+	};
+}
