@@ -1,15 +1,14 @@
 #pragma once
-#include "../../include/Pokemon/Pokemon.hpp"
+#include "../Pokemon.hpp"
 
 namespace N_Pokemon {
+    namespace N_Pokemons {
 
-	namespace N_Pokemons {
-		class Pikachu : public Pokemon { 
-		
-		public:
-			Pikachu();
-			void thunderShock(Pokemon& target);
-		};
+        class Pikachu : public Pokemon {
+        public:
+            Pikachu();
+            void thunderShock(Pokemon& target);
+        };
 
-	}
+    }
 }
