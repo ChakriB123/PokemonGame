@@ -28,10 +28,6 @@ namespace N_Pokemon {
 		health = other.health;
 	}
 
-	// Destructor
-	Pokemon::~Pokemon() {
-		// Destructor logic (if any) goes here
-	}
 
 	void Pokemon::attack(Pokemon& target) {
 		int damage = 10; // Fixed damage for simplicity
@@ -50,7 +46,12 @@ namespace N_Pokemon {
 		}
 	}
 
-	bool Pokemon::isFainted() {
+	bool Pokemon::isFainted()const {
 		return health <= 0;
+	}
+
+	string Pokemon::getName()
+	{
+		return name;
 	}
 }

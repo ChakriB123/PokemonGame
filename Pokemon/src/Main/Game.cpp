@@ -41,7 +41,7 @@ namespace N_Main {
             case 2: {
                 std::cout << "You head to the PokeCenter.\n";
                 player.chosenPokemon.heal(); // Heal the player's Pokémon
-                std::cout << player.chosenPokemon.name << "'s health is fully restored!\n";
+                std::cout << player.chosenPokemon.getName() << "'s health is fully restored!\n";
                 break;
             }
             case 5: {
