@@ -7,7 +7,7 @@
 #include <string>
 using namespace N_Character;
 using namespace N_Main;
-
+using namespace N_Player;
 using namespace std;
 
 // Function to handle the main game loop
@@ -15,19 +15,21 @@ using namespace std;
 int main() {
 
     // Continue with the main flow of the game
-    ProfessorOak professor("Professor Oak");
-    Player player;
-
-    // Greet the player and offer Pokemon choices
-    professor.greetPlayer(player);
-    professor.offerPokemonChoices(player);
+    ProfessorOak* professor = new ProfessorOak("Professor Oak");
+    Player* player = new Player();    // Greet the player and offer Pokemon choices
+    professor->greetPlayer(*player);
+    professor->offerPokemonChoices(*player);
 
     // Explain the main quest
-    professor.explainMainQuest(player);
+    professor->explainMainQuest(*player);
 
     // Start the main game loop
-    Game game;
-    game.gameLoop(player);
+    Game* game = new Game();
+    game->gameLoop(*player);
+
+    delete(professor);
+    delete(player);
+    delete(game);
 
     return 0;
 }
