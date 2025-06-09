@@ -29,12 +29,12 @@ namespace N_Pokemon {
 	}
 
 
-	void Pokemon::attack(Pokemon& target) {
-		int damage = 10; // Fixed damage for simplicity
-		cout << name << " attacks " << target.name << " for " << damage << " damage!\n";
-		//cout << "target health after attack" << target.health <<endl;
-		target.takeDamage(damage); // Apply damage to the target Pokémon
-	}
+	//void Pokemon::attack(Pokemon& target) {
+	//	int damage = 10; // Fixed damage for simplicity
+	//	cout << name << " attacks " << target.name << " for " << damage << " damage!\n";
+	//	//cout << "target health after attack" << target.health <<endl;
+	//	target.takeDamage(damage); // Apply damage to the target Pokémon
+	//}
 	void Pokemon::heal() {
 		health = maxHealth; // Restore health to full
 	}
