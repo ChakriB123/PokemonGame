@@ -8,12 +8,23 @@ namespace N_Pokemon {
 
         Balbasaur::Balbasaur() : Pokemon("Charmander", PokemonType::FIRE, 100, 35) {}
 
-        void Balbasaur::vineWhip(Pokemon& target) {
-            cout << name << " uses vine Whip on " << target.getName() << "!\n";
-            target.takeDamage(20);
+        void Balbasaur::vineWhip(Pokemon* target) {
+            cout << name << " used VINE WHIP!\n";
+            N_Utility::Utility::waitForEnter();
+
+            cout << "...\n";
+            N_Utility::Utility::waitForEnter();
+
+            target->takeDamage(attackPower);
+
+            if (target->isFainted())
+                cout << target->getName() << " fainted!\n";
+            else
+                cout << target->getName() << " has " << target->getHealth() << " HP left.\n";
+            N_Utility::Utility::waitForEnter();
         }
 
-        void Balbasaur::attack(Pokemon& target)
+        void Balbasaur::attack(Pokemon* target)
         {
             vineWhip(target);
         }

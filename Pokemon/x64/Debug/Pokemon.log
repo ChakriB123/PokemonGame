@@ -1,106 +1,17 @@
 ﻿  BattleManager.cpp
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-  Game.cpp
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(11,25): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(11,25): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(11,25): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(12,25): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(12,25): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(12,25): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(13,25): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(13,25): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(13,25): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(37,25): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(37,25): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(37,25): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(37,55): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(37,55): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(37,55): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(37,37): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(37,37): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp(37,37): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-  main.cpp
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
+  WildEncounterManager.cpp
+E:\AID Unity\PokemonGame\Pokemon\src\Battle\WildEncounterManager.cpp(7,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Player.cpp
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(6,25): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(6,25): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(6,25): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(9,13): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(9,13): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(9,13): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(17,29): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(17,29): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(17,29): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(20,29): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(20,29): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(20,29): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(23,29): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(23,29): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(23,29): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(26,29): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(26,29): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp(26,29): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
+  ProfessorOak.cpp
+  Game.cpp
+  main.cpp
+  Pokemon.cpp
   Balbasaur.cpp
   Caterpie.cpp
   Charmander.cpp
   Pidgey.cpp
   Pikachu.cpp
-  Pokemon.cpp
-  ProfessorOak.cpp
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\include\Character\Player.hpp(16,17): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
   Squirtle.cpp
   Zubat.cpp
-  WildEncounterManager.cpp
-E:\AID Unity\PokemonGame\Pokemon\src\Battle\WildEncounterManager.cpp(7,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-E:\AID Unity\PokemonGame\Pokemon\src\Battle\WildEncounterManager.cpp(10,35): error C2259: 'N_Pokemon::Pokemon': cannot instantiate abstract class
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(10,11): message : see declaration of 'N_Pokemon::Pokemon'
-E:\AID Unity\PokemonGame\Pokemon\src\Battle\WildEncounterManager.cpp(10,35): message : due to following members:
-E:\AID Unity\PokemonGame\Pokemon\src\Battle\WildEncounterManager.cpp(10,35): message : 'void N_Pokemon::Pokemon::attack(N_Pokemon::Pokemon &)': is abstract
-E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\Pokemon.hpp(24,22): message : see declaration of 'N_Pokemon::Pokemon::attack'
   Generating Code...
+  Pokemon.vcxproj -> E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Pokemon.exe

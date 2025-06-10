@@ -3,13 +3,13 @@
 
 namespace N_Battle {
 
-    void BattleManager::startBattle(Player& player, Pokemon& wildPokemon) {
-        battleState.playerPokemon = &player.chosenPokemon;
-        battleState.wildPokemon = &wildPokemon;
+    void BattleManager::startBattle(Player* player, Pokemon* wildPokemon) {
+        battleState.playerPokemon = player->chosenPokemon;
+        battleState.wildPokemon = wildPokemon;
         battleState.playerTurn = true;  // Player starts first
         battleState.battleOngoing = true;
 
-        cout << "A wild " << wildPokemon.getName() << " appeared!\n";
+        cout << "A wild " << wildPokemon->getName() << " appeared!\n";
         battle();
     }
 
@@ -17,11 +17,11 @@ namespace N_Battle {
         while (battleState.battleOngoing) {
             if (battleState.playerTurn) {
                 // Player's turn to attack
-                battleState.playerPokemon->attack(*battleState.wildPokemon);
+                battleState.playerPokemon->attack(battleState.wildPokemon);
             }
             else {
                 // Wild Pokémon's turn to attack
-                battleState.wildPokemon->attack(*battleState.playerPokemon);
+                battleState.wildPokemon->attack(battleState.playerPokemon);
             }
 
             // Update the battle state after the turn
