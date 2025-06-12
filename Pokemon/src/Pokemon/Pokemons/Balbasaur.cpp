@@ -6,27 +6,27 @@ namespace N_Pokemon {
     namespace N_Pokemons {
         using namespace std;
 
-        Balbasaur::Balbasaur() : Pokemon("Charmander", PokemonType::FIRE, 100, 35) {}
+        Balbasaur::Balbasaur()
+            : Pokemon("Balbasaur", PokemonType::GRASS, 110, {
+                Move("VINE WHIP", 25),
+                Move("TACKLE", 10)
+                }) {}
 
-        void Balbasaur::vineWhip(Pokemon* target) {
-            cout << name << " used VINE WHIP!\n";
-            N_Utility::Utility::waitForEnter();
 
-            cout << "...\n";
-            N_Utility::Utility::waitForEnter();
+        void Balbasaur::attack(Move selectedMove, Pokemon* target) {
+            Pokemon::attack(selectedMove, target);
 
-            target->takeDamage(attackPower);
+            if (selectedMove.name == "VINE WHIP") {
+                // Chance for a second hit (50% chance)
+                int secondHitChance = rand() % 2;
 
-            if (target->isFainted())
-                cout << target->getName() << " fainted!\n";
-            else
-                cout << target->getName() << " has " << target->getHealth() << " HP left.\n";
-            N_Utility::Utility::waitForEnter();
-        }
-
-        void Balbasaur::attack(Pokemon* target)
-        {
-            vineWhip(target);
+                if (secondHitChance == 1) {
+                    Pokemon::attack(selectedMove, target);
+                    cout << name << " hits again with a second " << selectedMove.name << "!\n";
+                }
+                else
+                    cout << target->getName() << " dodged the second hit!\n";
+            }
         }
     }
 }

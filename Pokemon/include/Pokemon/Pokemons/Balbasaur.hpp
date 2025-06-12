@@ -9,9 +9,7 @@ namespace N_Pokemon {
         class Balbasaur : public Pokemon {
         public:
             Balbasaur();
-        private:
-            void vineWhip(Pokemon* target);
-            void attack(Pokemon* target) override;
+            void attack(Move selectedMove, Pokemon* target) override;
 
         };
 

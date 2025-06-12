@@ -6,26 +6,24 @@ namespace N_Pokemon {
     namespace N_Pokemons {
         using namespace std;
 
-        Charmander::Charmander() : Pokemon("Charmander", PokemonType::FIRE, 100, 35) {}
+        Charmander::Charmander()
+            : Pokemon("Charmander", PokemonType::FIRE, 95, {
+                Move("EMBER", 20),
+                Move("SCRATCH", 15),
+                Move("BLAZING CHARGE", 70)
+                }) {}
 
-        void Charmander::flameThrower(Pokemon* target) {
-            cout << name << " used FLAME THROWER!\n";
-            N_Utility::Utility::waitForEnter();
-
-            cout << "...\n";
-            N_Utility::Utility::waitForEnter();
-
-            target->takeDamage(attackPower);
-
-            if (target->isFainted())
-                cout << target->getName() << " fainted!\n";
-            else
-                cout << target->getName() << " has " << target->getHealth() << " HP left.\n";
-            N_Utility::Utility::waitForEnter();
-        }
-        void Charmander::attack(Pokemon* target)
+        void Charmander::attack(Move selectedMove, Pokemon* target)
         {
-            flameThrower(target);
+            Pokemon::attack(selectedMove, target);
+
+            if (selectedMove.name == "BLAZING CHARGE")
+            {
+                // Recoil effect: Charmander takes recoil damage
+                this->takeDamage(10); // Fixed recoil damage
+                cout << name << " takes 10 recoil damage from the Blazing Charge!\n";
+                Utility::waitForEnter();
+            }
         }
     }
 }

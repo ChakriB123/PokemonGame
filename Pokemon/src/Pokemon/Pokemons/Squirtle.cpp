@@ -6,27 +6,29 @@ namespace N_Pokemon {
     namespace N_Pokemons {
         using namespace std;
 
-        Squirtle::Squirtle() : Pokemon("Charmander", PokemonType::FIRE, 100, 35) {}
+        Squirtle::Squirtle()
+            : Pokemon("Squirtle", PokemonType::WATER, 105, {
+                Move("WATER GUN", 20),
+                Move("TACKLE", 10),
+                Move("RAPID SPIN", 5)
+                }) {}
 
-        void Squirtle::waterSplash(Pokemon* target) {
-            cout << name << " used WATER SPLASH!\n";
-            N_Utility::Utility::waitForEnter();
-
-            cout << "...\n";
-            N_Utility::Utility::waitForEnter();
-
-            target->takeDamage(attackPower);
-
-            if (target->isFainted())
-                cout << target->getName() << " fainted!\n";
-            else
-                cout << target->getName() << " has " << target->getHealth() << " HP left.\n";
-            N_Utility::Utility::waitForEnter();
-        }
-
-        void Squirtle::attack(Pokemon* target)
+        void Squirtle::attack(Move selectedMove, Pokemon* target)
         {
-            waterSplash(target);
+            Pokemon::attack(selectedMove, target);
+
+            if (selectedMove.name == "RAPID SPIN")
+            {
+                // Random number of hits between 2 and 5
+                int hits = (rand() % 4) + 2;
+
+                // Split damage across hits
+                for (int i = 0; i < hits; ++i) {
+                    Pokemon::attack(selectedMove, target);
+                }
+
+                std::cout << "... and hit " << hits << " times!\\n";
+            }
         }
     }
 }

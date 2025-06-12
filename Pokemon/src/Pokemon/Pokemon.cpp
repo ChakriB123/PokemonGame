@@ -9,15 +9,16 @@ namespace N_Pokemon {
 			name = "Unknown";
 			type = PokemonType::NORMAL;
 			health = 50;
+			moves;
 		}
 
 		// Parameterized constructor
-		Pokemon::Pokemon(string p_name, PokemonType p_type, int p_maxHealth, int p_attackPower) {
+		Pokemon::Pokemon(string p_name, PokemonType p_type, int p_maxHealth,vector<Move> p_moves ) {
 			name = p_name;
 			type = p_type;
 			health = p_maxHealth;
 			maxHealth = p_maxHealth;
-			attackPower = p_attackPower;
+			moves = p_moves;
 
 		}
 		// Copy constructor
@@ -28,14 +29,57 @@ namespace N_Pokemon {
 			maxHealth = other->maxHealth;
 			attackPower = other->attackPower;
 		}
+	
+		void Pokemon::selectAndUseMove(Pokemon* target) {
+			printAvailableMoves();
+
+			int choice = selectMove();
+			Move selectedMove = moves[choice - 1];
+
+			useMove(selectedMove, target);
+		}
 
 
-		//void Pokemon::attack(Pokemon& target) {
-		//	int damage = 10; // Fixed damage for simplicity
-		//	cout << name << " attacks " << target.name << " for " << damage << " damage!\n";
-		//	//cout << "target health after attack" << target.health <<endl;
-		//	target.takeDamage(damage); // Apply damage to the target Pokémon
-		//}
+		void Pokemon::printAvailableMoves() {
+			cout << name << "'s available moves:\n";
+
+			// List out all moves for the player to choose from
+			for (size_t i = 0; i < moves.size(); ++i) {
+				cout << i + 1 << ": " << moves[i].name << " (Power: " << moves[i].power << ")\n";
+			}
+		}
+
+		int Pokemon::selectMove() {
+			// Ask the player to select a move
+			int choice;
+			cout << "Choose a move: ";
+			cin >> choice;
+
+			// Validate the choice
+			while (choice < 1 || choice > static_cast<int>(moves.size())) {
+				cout << "Invalid choice. Try again: ";
+				cin >> choice;
+			}
+
+			return choice;
+		}
+
+
+		void Pokemon::useMove(Move selectedMove, Pokemon* target) {
+			cout << name << " used " << selectedMove.name << "!\n";
+			attack(selectedMove, target);
+
+			N_Utility::Utility::waitForEnter();
+
+			cout << "...\n";
+			N_Utility::Utility::waitForEnter();
+
+			if (target->isFainted())
+				cout << target->name << " fainted!\n";
+			else
+				cout << target->name << " has " << target->health << " HP left.\n";
+		}
+
 		void Pokemon::heal() {
 			health = maxHealth; // Restore health to full
 		}
@@ -46,6 +90,8 @@ namespace N_Pokemon {
 				health = 0;
 			}
 		}
+
+		void Pokemon::attack(Move selectedMove, Pokemon* target) { target->takeDamage(selectedMove.power); }
 
 		bool Pokemon::isFainted()const {
 			return health <= 0;
@@ -60,4 +106,13 @@ namespace N_Pokemon {
 			return health;
 		}
 
+		void Pokemon::reduceAttackPower(int reduced_damage)
+		{
+			for (int i = 0; i < moves.size(); i++)
+			{
+				moves[i].power -= reduced_damage;
+				if (moves[i].power < 0)
+					moves[i].power = 0;
+			}
+		}
 	}

@@ -1,17 +1,4 @@
-﻿  BattleManager.cpp
-  WildEncounterManager.cpp
-E:\AID Unity\PokemonGame\Pokemon\src\Battle\WildEncounterManager.cpp(7,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Player.cpp
-  ProfessorOak.cpp
-  Game.cpp
-  main.cpp
-  Pokemon.cpp
-  Balbasaur.cpp
-  Caterpie.cpp
+﻿  Pokemon.cpp
   Charmander.cpp
-  Pidgey.cpp
-  Pikachu.cpp
-  Squirtle.cpp
-  Zubat.cpp
   Generating Code...
   Pokemon.vcxproj -> E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Pokemon.exe
