@@ -25,7 +25,7 @@ namespace N_Pokemon {
                     cout << name << " hits again with a second " << selectedMove.name << "!\n";
                 }
                 else
-                    cout << target->getName() << " dodged the second hit!\n";
+                    cout << target->name << " dodged the second hit!\n";
             }
         }
     }

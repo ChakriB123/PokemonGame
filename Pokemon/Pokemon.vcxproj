@@ -173,6 +173,7 @@
     <ClCompile Include="src\Character\ProfessorOak.cpp" />
     <ClCompile Include="src\Pokemon\Pokemons\Squirtle.cpp" />
     <ClCompile Include="src\Pokemon\Pokemons\Zubat.cpp" />
+    <ClCompile Include="src\Pokemon\StatusEffects\ParalyzedEffect.cpp" />
     <ClCompile Include="src\Utility\Utility.cpp" />
     <ClCompile Include="src\Battle\WildEncounterManager.cpp" />
   </ItemGroup>
@@ -182,7 +183,7 @@
     <ClInclude Include="include\Main\Game.hpp" />
     <ClInclude Include="include\Pokemon\Grass.hpp" />
     <ClInclude Include="include\Character\Player.hpp" />
-    <ClInclude Include="include\Pokemon\IStatusEffect.hpp" />
+    <ClInclude Include="include\Pokemon\StatusEffects\IStatusEffect.hpp" />
     <ClInclude Include="include\Pokemon\move.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Balbasaur.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Caterpie.hpp" />
@@ -195,6 +196,8 @@
     <ClInclude Include="include\Pokemon\Pokemons\Zubat.hpp" />
     <ClInclude Include="include\Pokemon\PokemonType.hpp" />
     <ClInclude Include="include\Character\ProfessorOak.hpp" />
+    <ClInclude Include="include\Pokemon\StatusEffects\ParalyzedEffect.hpp" />
+    <ClInclude Include="include\Pokemon\StatusEffects\StatusEffectType.hpp" />
     <ClInclude Include="include\Utility\Utility.hpp" />
     <ClInclude Include="include\Battle\WildEncounterManager.hpp" />
   </ItemGroup>

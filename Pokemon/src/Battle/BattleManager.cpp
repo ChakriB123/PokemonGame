@@ -12,7 +12,7 @@ namespace N_Battle
         battleState.playerTurn = true;
         battleState.battleOngoing = true;
 
-        cout << "A wild " << wildPokemon->getName() << " appeared!\n";
+        cout << "A wild " << wildPokemon->name << " appeared!\n";
         Utility::waitForEnter();
 
         battle();
@@ -47,11 +47,11 @@ namespace N_Battle
 
     void BattleManager::handleBattleOutcome() {
         if (battleState.playerPokemon->isFainted()) {
-            cout << battleState.playerPokemon->getName()
+            cout << battleState.playerPokemon->name
                 << " has fainted! You lose the battle.\n";
         }
         else {
-            cout << "You defeated the wild " << battleState.wildPokemon->getName() << "!\n";
+            cout << "You defeated the wild " << battleState.wildPokemon->name << "!\n";
         }
     }
 }

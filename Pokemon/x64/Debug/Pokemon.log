@@ -1,4 +1,8 @@
-﻿  Pokemon.cpp
+﻿  Player.cpp
+  Balbasaur.cpp
+  Caterpie.cpp
   Charmander.cpp
+  ParalyzedEffect.cpp
+E:\AID Unity\PokemonGame\Pokemon\include\Pokemon\StatusEffects\ParalyzedEffect.hpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   Generating Code...
   Pokemon.vcxproj -> E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Pokemon.exe

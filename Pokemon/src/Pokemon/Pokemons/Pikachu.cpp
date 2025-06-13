@@ -18,6 +18,10 @@ namespace N_Pokemon {
         {
             if (selectedMove.name == "THUNDER BOLT")
             {
+
+                if (target->canApplyEffect())
+                    target->applyEffect(StatusEffectType::PARALYZED);
+
                 // 80% chance to hit
                 if (rand() % 100 < 80)
                 {

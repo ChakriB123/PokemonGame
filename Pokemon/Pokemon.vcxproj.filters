@@ -60,6 +60,9 @@
     <ClCompile Include="src\Pokemon\Pokemons\Balbasaur.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Pokemon\StatusEffects\ParalyzedEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Main\Game.hpp">
@@ -119,7 +122,13 @@
     <ClInclude Include="include\Pokemon\move.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Pokemon\IStatusEffect.hpp">
+    <ClInclude Include="include\Pokemon\StatusEffects\IStatusEffect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Pokemon\StatusEffects\ParalyzedEffect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Pokemon\StatusEffects\StatusEffectType.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
