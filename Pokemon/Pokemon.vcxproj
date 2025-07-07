@@ -182,6 +182,7 @@
     <ClInclude Include="include\Main\Game.hpp" />
     <ClInclude Include="include\Pokemon\Grass.hpp" />
     <ClInclude Include="include\Character\Player.hpp" />
+    <ClInclude Include="include\Pokemon\move.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Balbasaur.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Caterpie.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Charmander.hpp" />

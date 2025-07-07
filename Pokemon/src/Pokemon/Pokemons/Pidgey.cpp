@@ -6,11 +6,26 @@ namespace N_Pokemon {
     namespace N_Pokemons {
         using namespace std;
 
-        Pidgey::Pidgey() : Pokemon("Pidgey", PokemonType::NORMAL, 100, 35) {}
+        Pidgey::Pidgey()
+        : Pokemon("Pidgey", PokemonType::NORMAL, 80, {
+            Move("GUST", 15),
+            Move("TACKLE", 10)
+        }) {}
+    
+    void Pidgey::attack(Move selectedMove, Pokemon* target)
+    {
+        Pokemon::attack(selectedMove, target);
 
-        void Pidgey::wingAttack(Pokemon& target) {
-            cout << name << " uses Wing Attack on " << target.getName() << "!\n";
-            target.takeDamage(20);
+        if(selectedMove.name == "GUST")
+        {
+            // 20% chance to blow the opponent away
+            if (rand() % 100 < 20)
+            { 
+                std::cout <<"... and blew the opponent away!\n";
+                BattleManager::stopBattle();
+                Utility::waitForEnter();
+            }
         }
+    }
     }
 }
