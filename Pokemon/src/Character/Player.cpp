@@ -3,30 +3,30 @@
 namespace N_Player {
     Player::Player() {
         name = "Trainer";
-        chosenPokemon = Pokemon(); // Using the default Pokemon constructor
+         
     }
 
-    Player::Player(std::string p_name, Pokemon p_chosenPokemon) {
+    Player::Player(string p_name) {
         name = p_name;
-        chosenPokemon = p_chosenPokemon;
+     
     }
 
     void Player::choosePokemon(int choice) {
         switch ((PokemonChoice)choice) {
         case PokemonChoice::CHARMANDER:
-            chosenPokemon = Pokemon("Charmander", PokemonType::FIRE, 100, 30);
+            chosenPokemon = new Charmander();
             break;
         case PokemonChoice::BULBASAUR:
-            chosenPokemon = Pokemon("Bulbasaur", PokemonType::GRASS, 100, 25);
+            chosenPokemon = new Balbasaur();
             break;
         case PokemonChoice::SQUIRTLE:
-            chosenPokemon = Pokemon("Squirtle", PokemonType::WATER, 100, 25);
+            chosenPokemon = new Squirtle();
             break;
         default:
-            chosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100, 30);
+            chosenPokemon = new Pikachu();
             break;
         }
-        std::cout << "Player " << name << " chose " << chosenPokemon.getName() << "!\n";
+        std::cout << "Player " << name << " chose " << chosenPokemon->getName() << "!\n";
         Utility::waitForEnter(); // Wait for user to press Enter before proceeding
     }
 }

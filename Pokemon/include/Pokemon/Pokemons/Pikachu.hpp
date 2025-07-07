@@ -1,5 +1,7 @@
 #pragma once
 #include "../Pokemon.hpp"
+#include "../../../include/Utility/Utility.hpp"
+using namespace N_Utility;
 
 namespace N_Pokemon {
     namespace N_Pokemons {
@@ -7,8 +9,7 @@ namespace N_Pokemon {
         class Pikachu : public Pokemon {
         public:
             Pikachu();
-        private:
-            void thunderShock(Pokemon& target);
+            void attack(Move selectedMove, Pokemon* target) override;
         };
 
     }
