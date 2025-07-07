@@ -4,12 +4,14 @@
 #include "../../include/Utility/Utility.hpp"
 using namespace N_Player;
 using namespace N_Utility;
+using namespace N_Pokemon;
 namespace N_Battle {
     class BattleManager {
     public:
-        void startBattle(Player& player, Pokemon& wildPokemon);
+        void startBattle(Player* player, Pokemon* wildPokemon);
+        static void stopBattle();
     private:
-        BattleState battleState;
+        static BattleState battleState;
         void battle();
         void handleBattleOutcome();
         void updateBattleState();

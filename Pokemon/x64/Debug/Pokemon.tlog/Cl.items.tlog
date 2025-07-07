@@ -2,8 +2,14 @@ E:\AID Unity\PokemonGame\Pokemon\src\Battle\BattleManager.cpp;E:\AID Unity\Pokem
 E:\AID Unity\PokemonGame\Pokemon\src\Main\Game.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Game.obj
 E:\AID Unity\PokemonGame\Pokemon\src\Main\main.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\main.obj
 E:\AID Unity\PokemonGame\Pokemon\src\Character\Player.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Player.obj
-E:\AID Unity\PokemonGame\Pokemon\src\Pokemon\Pikachu.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Pikachu.obj
+E:\AID Unity\PokemonGame\Pokemon\src\Pokemon\Pokemons\Balbasaur.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Balbasaur.obj
+E:\AID Unity\PokemonGame\Pokemon\src\Pokemon\Pokemons\Caterpie.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Caterpie.obj
+E:\AID Unity\PokemonGame\Pokemon\src\Pokemon\Pokemons\Charmander.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Charmander.obj
+E:\AID Unity\PokemonGame\Pokemon\src\Pokemon\Pokemons\Pidgey.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Pidgey.obj
+E:\AID Unity\PokemonGame\Pokemon\src\Pokemon\Pokemons\Pikachu.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Pikachu.obj
 E:\AID Unity\PokemonGame\Pokemon\src\Pokemon\Pokemon.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Pokemon.obj
 E:\AID Unity\PokemonGame\Pokemon\src\Character\ProfessorOak.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\ProfessorOak.obj
+E:\AID Unity\PokemonGame\Pokemon\src\Pokemon\Pokemons\Squirtle.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Squirtle.obj
+E:\AID Unity\PokemonGame\Pokemon\src\Pokemon\Pokemons\Zubat.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Zubat.obj
 E:\AID Unity\PokemonGame\Pokemon\src\Utility\Utility.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\Utility.obj
 E:\AID Unity\PokemonGame\Pokemon\src\Battle\WildEncounterManager.cpp;E:\AID Unity\PokemonGame\Pokemon\x64\Debug\WildEncounterManager.obj
