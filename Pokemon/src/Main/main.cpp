@@ -1,0 +1,35 @@
+#include "../../include/Main/Game.hpp"
+#include "../../include/Character/Player.hpp"
+#include "../../include/Character/ProfessorOak.hpp"
+
+#include <iostream>
+#include <limits> // Include this header to use std::numeric_limits
+#include <string>
+using namespace N_Character;
+using namespace N_Main;
+using namespace N_Player;
+using namespace std;
+
+// Function to handle the main game loop
+
+int main() {
+
+    // Continue with the main flow of the game
+    ProfessorOak* professor = new ProfessorOak("Professor Oak");
+    Player* player = new Player();    // Greet the player and offer Pokemon choices
+    professor->greetPlayer(player);
+    professor->offerPokemonChoices(player);
+
+    // Explain the main quest
+    professor->explainMainQuest(player);
+
+    // Start the main game loop
+    Game* game = new Game();
+    game->gameLoop(player);
+
+    delete(professor);
+    delete(player);
+    delete(game);
+
+    return 0;
+}
